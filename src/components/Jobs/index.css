@@ -1,0 +1,46 @@
+.job-container {
+    margin-bottom: 10px; /* Отступ между каждой работой */
+  }
+  
+  .job-info {
+    display: flex;
+    margin-left: 42px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex: 1;
+  }
+
+  .job-logo {
+    position: absolute !important;
+  }
+  
+  .position-period {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+  
+  .position {
+    flex-basis: 50%;
+  }
+  
+  .date-period {
+    flex-basis: 50%;
+    text-align: right;
+  }
+  
+  .company-location {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+  
+  .companyName {
+  }
+  
+  .location {
+    /* flex-basis: 50%; */
+    margin-left: 8px;
+  }

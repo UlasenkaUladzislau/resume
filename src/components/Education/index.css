@@ -1,0 +1,32 @@
+.education-text {
+    margin-left: 42px;
+  }
+
+  .education-container {
+    margin-bottom: 10px;
+  }
+  
+.education {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  
+  .description {
+    /* display: flex; */
+    /* flex: 2 1 90%; */
+    margin-right: 10px; /* Отступ между description и DatePeriod */
+  }
+
+  .education .date-period {
+    /* display: flex; */
+    flex: 1 1;
+  }
+  
+  /* .date-period {
+    flex-shrink: 0;
+  } */
+
+  .gsu-logo {
+    position: absolute !important;
+  }

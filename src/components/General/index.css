@@ -1,0 +1,10 @@
+img {
+    border-radius: 15%;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }

@@ -1,0 +1,19 @@
+.language {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .language-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .language-rating {
+    margin-left: auto;
+  }
+  
+  .flag {
+    width: 18px;
+    margin-right: 8px;
+  }
