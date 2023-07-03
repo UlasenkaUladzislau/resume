@@ -1,12 +1,13 @@
 import { Table } from "semantic-ui-react"
+import { GB, UA, DE, BY, RU, FlagComponent } from 'country-flag-icons/react/3x2'
 import './index.css'
 
 export const BaseInfo = () => {
- return <Table size='large'>
+ return <Table size='large' className="baseInfoTable">
     <Table.Body>
       <Table.Row>
         <Table.HeaderCell>Address:</Table.HeaderCell>
-        <Table.Cell>Lahnstein, 56112, Germany</Table.Cell>
+        <Table.Cell>Lahnstein, GER <DE className="info-flag" /></Table.Cell>
       </Table.Row>
       <Table.Row>
         <Table.HeaderCell>Phone:</Table.HeaderCell>

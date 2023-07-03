@@ -1,4 +1,4 @@
-import { Header, Image } from "semantic-ui-react";
+import { Header, Image, List } from "semantic-ui-react";
 import { FC } from "react";
 import { Project } from "./Project";
 import { DatePeriod } from "../DatePeriod/DatePeriod";
@@ -24,9 +24,7 @@ export const Job: FC<IJob> = ({
               <Header as="h4">{position}</Header>
             </div>
             <div className="date-period">
-              <Header as="h5">
                 <DatePeriod start={start} end={end} />
-              </Header>
             </div>
           </div>
           <div className="company-location">
@@ -40,11 +38,11 @@ export const Job: FC<IJob> = ({
             </div>
           </div>
         </div>
-        <div className="projects">
+        <List as='ul' className="projects">
           {projects.map((project, index) => (
             <Project key={index} {...project} />
           ))}
-        </div>
+        </List>
       </div>
     );
  };

@@ -2,8 +2,9 @@ import { Header } from "semantic-ui-react"
 import { Job } from "./Job"
 import getquin from "./icons/getquin.jpeg"
 import hilscher from "./icons/hilscher.jpeg"
-import sva from "./icons/sva.jpeg"
+import sva from "./icons/sva.jpg"
 import startmatter from "./icons/startmatter.jpeg"
+import linija from "./icons/linija.png"
 
 
 export interface IProject {
@@ -31,7 +32,7 @@ const jobs: IJob[] = [{
     icon: getquin,
     website: 'getquin.com',
     projects: [{
-        description: 'Develop social network for all kinds of investors',
+        description: 'Develop the website and mobile application for a social network for investors and portfolio tracking purposes',
         website: 'www.app.getquin.com'
     }]
 }, {
@@ -43,27 +44,29 @@ const jobs: IJob[] = [{
     location: 'Wiesbaden, Germany', 
     website: 'www.sva.de',
     projects: [{
-        description: 'Working on Automation Installation Framework',
+        description: 'I worked on the development of the Automation Installation Framework, a software program for centralized remote installation, configuration, and removal of programs on network machines',
     }, {
-        description: 'Develop a Integrative Disaster Recovery solution',
+        description: 'I was involved in developing an Integrative Disaster Recovery solution, which aimed to provide a comprehensive system for managing and recovering from various types of disasters',
         website: 'idr-manager'
+    }, {
+        description: 'Сar dealer portal that facilitated car sales and insurance processes for dealers'
     }]
 }, {
     start: '01/2018',
     end: '02/2020',
     position: 'Full Stack Developer',
-    location: 'Frankfurt Am Main Area, Germany',
+    location: 'Frankfurt, Germany',
     website: 'https://www.hilscher.com',
     icon: hilscher,
     companyName: 'Hilscher Gesellschaft für Systemautomation mbH',
     projects: [{
-        description: 'Network device information portal',
+        description: 'Developed an industrial device search engine, enabling users to find and explore various industrial devices efficiently',
         website: 'www.netiot.com'
     }, {
-        description: 'Edge gateways management system',
+        description: 'Developed a comprehensive system for managing devices, containers, users, permissions, organizations and other components. Allowed users to configure the devices, access real- time data from sensors, export data, and store it on a Network Attached Storage (NAS) system.',
         website: 'www.netfield.io'
     }, {
-        description: 'Create administrator pages and tools to manage and monitor network devices',
+        description: 'Developed administrator pages and tools for efficient management and monitoring of network devices',
     }]
 }, {
     start: '08/2014',
@@ -74,27 +77,29 @@ const jobs: IJob[] = [{
     icon: startmatter,
     website: 'https://startmatter.com/',
     projects: [{
-        description: 'Working on site builder project',
+        description: 'Developed a platform that enabled users to effortlessly create stunning and profitable business websites.',
         website: 'www.heroicnow.com'
     }, {
-        description: 'Develop a social network for neighborhood communication.',
+        description: 'Developed a social network platform focused on neighborhood communication.',
+    }, {
+        description: 'development of a Content Management System (CMS) that allowed users to create their own websites through a user-friendly portal',
     }]
 }, {
     start: '02/2012',
     end: '02/2014',
     position: 'Systems Administrator',
     location: 'Gomel, Belarus',
-    icon: startmatter,
+    icon: linija,
     companyName: 'Liniya Snosa',
     website: 'www.liniyasnosa.by',
     projects: [{
-        description: 'Administration of a local network. Manage, troubleshooting, network security.',
+        description: 'Managed local network administration, troubleshooting and resolving issues',
     }]
 }]
 
 export const Jobs = () => {
  return <>
-    <Header>Jobs:</Header>
+    <Header className="job-header">Jobs:</Header>
     {jobs.map((job, index) => (
         <div key={index}>
           <Job {...job} />

@@ -1,0 +1,8 @@
+.profile-links {
+    margin-left: 15px;
+}
+
+.profile-links i.small.icon, i.small.icons {
+    line-height: 1;
+    font-size: 1.15em;
+}

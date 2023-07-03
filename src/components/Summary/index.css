@@ -1,3 +1,11 @@
 table {
     border: none !important;
 }
+
+.myName {
+    display: flex;
+}
+
+.summary {
+    text-align: justify;
+}

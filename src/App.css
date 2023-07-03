@@ -4,12 +4,6 @@
   margin-bottom: 0px;
 }
 
-.parent-grid {
-  /* width: 2480px !important;
-  height: 3508px !important; */
-  border: red 2px solid;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;

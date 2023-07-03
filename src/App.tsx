@@ -15,22 +15,18 @@ function App() {
   return (
     <Grid className='parent-grid' celled='internally'>
       <Grid.Row>
-        <Grid.Column width={10}>
-          <Summary />
-          <Jobs />
-          <Educations />
-        </Grid.Column>
-        <Grid.Column width={6} className="centered-column">
+        <Grid.Column width={5} className="centered-column">
           <General />
-          <ProfileLinks />
           <BaseInfo />
           <Skills />
           <Languages />
         </Grid.Column>
+        <Grid.Column width={11}>
+          <Summary />
+          <Jobs />
+          <Educations />
+        </Grid.Column>
       </Grid.Row>
-      <Grid.Row></Grid.Row>
-      <Grid.Row></Grid.Row>
-      <Grid.Row></Grid.Row>
     </Grid>
   );
 }

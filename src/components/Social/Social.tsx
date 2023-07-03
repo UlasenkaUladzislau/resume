@@ -10,15 +10,15 @@ export const ProfileLinks: FC = () => {
     };
   
     return (
-      <div>
+      <div className="profile-links">
         <a href={profileLinks.github} target="_blank" rel="noopener noreferrer">
-          <Icon name="github" size="large" link />
+          <Icon name="github" size="small" link />
         </a>
         <a href={profileLinks.xing} target="_blank" rel="noopener noreferrer">
-          <Icon name="xing" size="large" link />
+          <Icon name="xing" size="small" link />
         </a>
         <a href={profileLinks.linkedin} target="_blank" rel="noopener noreferrer">
-          <Icon name="linkedin" size="large" link />
+          <Icon name="linkedin" size="small" link />
         </a>
       </div>
     );

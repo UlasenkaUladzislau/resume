@@ -1,6 +1,6 @@
 import { FC } from "react";
-import { Label } from "semantic-ui-react";
 import './index.css';
+import { Label } from "semantic-ui-react";
 
 type SkillSection = {
     color: 'red' | 'grey' | 'black';
@@ -9,12 +9,12 @@ type SkillSection = {
 
 const topSkills: SkillSection = {
     color: 'red',
-    tags: ['ReactJS', 'Javascript', 'Typescript', 'CSS3', 'HTML5', 'React Native']
+    tags: ['Javascript', 'CSS3', 'HTML5', 'Typescript', 'ReactJS']
 };
 
 const frameworks: SkillSection = {
     color: 'grey',
-    tags: ['VueJS', 'Django', 'Angular', 'NodeJs'],
+    tags: ['VueJS', 'NodeJs', 'Django', 'Angular', 'React Native'],
 };
 
 const languages: SkillSection = {
@@ -24,7 +24,7 @@ const languages: SkillSection = {
 
 const UIFrameworks: SkillSection = {
     color: 'grey',
-    tags: ['Bootstrap', 'Semantic UI', 'Material-UI'],
+    tags: ['UX', 'Bootstrap', 'Material-UI', 'Semantic UI'],
 };
 
 const versionControlTools: SkillSection = {
@@ -35,6 +35,11 @@ const versionControlTools: SkillSection = {
 const databases: SkillSection = {
     color: 'grey',
     tags: ['PostgreSQL', 'Redis', 'MySQL'],
+};
+
+const services: SkillSection = {
+    color: 'grey',
+    tags: ['Azure', 'IoT', 'Elasticsearch'],
 };
 
 const tests: SkillSection = {
@@ -52,12 +57,12 @@ const others: SkillSection = {
     tags: ['Network administration'],
 };
 
-const skills = [topSkills, frameworks, languages, UIFrameworks, versionControlTools, databases, tests, OS, others];
+const skills = [topSkills, frameworks, languages, UIFrameworks, versionControlTools, databases, services, tests, OS, others];
 
 
 export const Skills: FC = () => {
  return(
-    <div>
+    <div className="tags">
       {skills
         .map(skillGroup => skillGroup.tags
         .map(skill => <Label active className="skill-label" color={skillGroup.color}>{skill}</Label>))}

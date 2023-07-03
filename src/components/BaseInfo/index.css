@@ -1,3 +1,12 @@
 table {
     border: none !important;
 }
+
+.info-flag {
+  margin-left: 2px;  
+  width: 18px;  
+}
+
+.baseInfoTable {
+    margin: 5px 0px !important;
+}

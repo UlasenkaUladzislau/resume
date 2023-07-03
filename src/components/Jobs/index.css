@@ -1,46 +1,54 @@
 .job-container {
-    margin-bottom: 10px; /* Отступ между каждой работой */
-  }
+    margin-bottom: 12px; 
+}
   
-  .job-info {
-    display: flex;
-    margin-left: 42px;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    flex: 1;
-  }
+.job-info {
+  display: flex;
+  margin-left: 42px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex: 1;
+}
 
-  .job-logo {
-    position: absolute !important;
-  }
+.job-logo {
+  position: absolute !important;
+  margin-top: -2px;
+}
   
-  .position-period {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    flex-basis: 100%;
-  }
+.position-period {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
   
-  .position {
-    flex-basis: 50%;
-  }
-  
-  .date-period {
-    flex-basis: 50%;
-    text-align: right;
-  }
-  
-  .company-location {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    flex-basis: 100%;
-  }
-  
-  .companyName {
-  }
-  
-  .location {
-    /* flex-basis: 50%; */
-    margin-left: 8px;
-  }
+.position {
+  flex-basis: 50%;
+}
+
+.date-period {
+  flex-basis: 50%;
+  text-align: right;
+}
+
+.company-location {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.projects {
+  margin-top: 6px !important;
+}
+
+.job-header {
+  margin-top: 6px !important;
+  margin-bottom: 5px !important;
+}
+
+.project-link {
+  margin-left: 3px;
+  /* width: 10px;
+  className="project-link"  */
+}

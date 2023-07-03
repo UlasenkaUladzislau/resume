@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { FlagNameValues } from "semantic-ui-react";
 import { Language } from "./Language";
 import { GB, UA, DE, BY, RU, FlagComponent } from 'country-flag-icons/react/3x2'
 

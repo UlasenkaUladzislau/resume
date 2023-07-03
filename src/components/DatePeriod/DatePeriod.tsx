@@ -1,4 +1,5 @@
 import { FC } from "react"
+import { Header } from "semantic-ui-react";
 
 type DatePeriodProps = {
     start: string;
@@ -8,5 +9,5 @@ type DatePeriodProps = {
 export const DatePeriod: FC<DatePeriodProps> = ({
     start, end
 }) => {
-    return <>{start} - {end}</>
+    return <Header as="h5">{start} - {end}</Header>
 }

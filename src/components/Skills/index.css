@@ -5,3 +5,11 @@
 .ui.skill-label {
     margin-bottom: 6px !important;
 }
+
+.tags {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}

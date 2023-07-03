@@ -1,12 +1,15 @@
 import { FC } from "react";
-import { DatePeriod } from "../DatePeriod/DatePeriod"
-import { URL } from "url";
 import { IProject } from "./Jobs";
+import { Icon, List } from "semantic-ui-react";
+import './index.css';
 
 export const Project: FC<IProject> = ({
     description, website,
 }) => {
- return <>
-    <a href={website}>{description}</a>
- </>
+ return <List.Item as="li">
+    {description}
+    {website && <a className="project-link" href={website}>
+        <Icon size="small" name="linkify" />
+    </a>}
+ </List.Item>
 }
