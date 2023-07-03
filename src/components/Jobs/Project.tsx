@@ -8,7 +8,7 @@ export const Project: FC<IProject> = ({
 }) => {
  return <List.Item as="li">
     {description}
-    {website && <a className="project-link" href={website}>
+    {website && <a target="_blank" className="project-link" href={website}>
         <Icon size="small" name="linkify" />
     </a>}
  </List.Item>

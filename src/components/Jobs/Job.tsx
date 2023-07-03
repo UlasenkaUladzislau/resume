@@ -30,7 +30,7 @@ export const Job: FC<IJob> = ({
           <div className="company-location">
             <div className="companyName">
               <Header as="h5">
-                <a href={website}>{companyName}</a>
+                <a href={website} target="_blank" rel="noreferrer">{companyName}</a>
               </Header>
             </div>
             <div className="location">

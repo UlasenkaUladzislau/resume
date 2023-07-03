@@ -1,6 +1,6 @@
 import { FC } from "react";
 import './index.css';
-import { Label } from "semantic-ui-react";
+import { Header, Label } from "semantic-ui-react";
 
 type SkillSection = {
     color: 'red' | 'grey' | 'black';
@@ -61,10 +61,11 @@ const skills = [topSkills, frameworks, languages, UIFrameworks, versionControlTo
 
 
 export const Skills: FC = () => {
- return(
+ return( <>
+ <Header className="job-header">Skills:</Header>
     <div className="tags">
       {skills
         .map(skillGroup => skillGroup.tags
         .map(skill => <Label active className="skill-label" color={skillGroup.color}>{skill}</Label>))}
-    </div>)
+    </div></>)
 }

@@ -3,7 +3,7 @@ import 'semantic-ui-css/semantic.min.css'
 import { Educations } from './components/Education/Educations';
 import { Skills } from './components/Skills/Skills';
 import { Jobs } from './components/Jobs/Jobs';
-import { General } from './components/General/General';
+import { Foto } from './components/Foto/Foto';
 import { Grid } from 'semantic-ui-react';
 import { Summary } from './components/Summary/Summary';
 import { Languages } from './components/Languages/Languages';
@@ -16,7 +16,8 @@ function App() {
     <Grid className='parent-grid' celled='internally'>
       <Grid.Row>
         <Grid.Column width={5} className="centered-column">
-          <General />
+          <Foto />
+          <ProfileLinks />
           <BaseInfo />
           <Skills />
           <Languages />

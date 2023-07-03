@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { Language } from "./Language";
 import { GB, UA, DE, BY, RU, FlagComponent } from 'country-flag-icons/react/3x2'
+import { Header } from "semantic-ui-react";
 
 export interface ILanguage {
   Flag: FlagComponent;
@@ -15,7 +16,7 @@ const langs: ILanguage[] = [{
 }, {
   lang: 'German',
   Flag: DE,
-  level: 4
+  level: 4.5
 }, {
   lang: 'Ukrainian',
   Flag: UA,
@@ -32,6 +33,7 @@ const langs: ILanguage[] = [{
 
 export const Languages: FC = () => {
  return <>
+    <Header className="job-header">Languages:</Header>
     {langs.map(lang => <Language {...lang} /> )}
  </>
 }
