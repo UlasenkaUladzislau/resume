@@ -24,7 +24,7 @@ export const Education: FC<EducationProps> = ({
             <DatePeriod start={start} end={end} />
           </div>
           </div>
-          <p>{university}</p>
+          <i className="university">{university}</i>
         </div>
       </div>
     );

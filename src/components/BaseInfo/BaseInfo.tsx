@@ -1,5 +1,5 @@
 import { Table } from "semantic-ui-react"
-import { GB, UA, DE, BY, RU, FlagComponent } from 'country-flag-icons/react/3x2'
+import { DE } from 'country-flag-icons/react/3x2'
 import './index.css'
 
 export const BaseInfo = () => {
@@ -11,7 +11,7 @@ export const BaseInfo = () => {
       </Table.Row>
       <Table.Row>
         <Table.HeaderCell>Phone:</Table.HeaderCell>
-        <Table.Cell>+491726654470</Table.Cell>
+        <Table.Cell><a target="href" href="tel:+491726654470">+491726654470</a></Table.Cell>
       </Table.Row>
       <Table.Row>
         <Table.HeaderCell>DoB:</Table.HeaderCell>
@@ -19,7 +19,7 @@ export const BaseInfo = () => {
       </Table.Row>
       <Table.Row>
         <Table.HeaderCell>Email:</Table.HeaderCell>
-        <Table.Cell>ulasenk@gmail.com</Table.Cell>
+        <Table.Cell><a target="href" href= "mailto:ulasenk@gmail.com">ulasenk@gmail.com</a></Table.Cell>
       </Table.Row>
       {/* <Table.Row>
         <Table.Cell>Skype</Table.Cell>

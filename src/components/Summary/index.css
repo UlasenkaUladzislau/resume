@@ -4,9 +4,10 @@ table {
 
 .myName {
     display: flex;
+    margin-bottom: 6px !important;
 }
 
 .summary {
     text-align: justify;
-    margin-bottom: 10px !important;
+    /* margin-bottom: 10px !important; */
 }

@@ -22,7 +22,7 @@ function App() {
           <Skills />
           <Languages />
         </Grid.Column>
-        <Grid.Column width={11}>
+        <Grid.Column className='main-column' width={11}>
           <Summary />
           <Jobs />
           <Educations />

@@ -33,7 +33,6 @@ const langs: ILanguage[] = [{
 
 export const Languages: FC = () => {
  return <>
-    <Header className="job-header">Languages:</Header>
     {langs.map(lang => <Language {...lang} /> )}
  </>
 }

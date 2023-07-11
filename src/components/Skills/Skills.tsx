@@ -62,7 +62,6 @@ const skills = [topSkills, frameworks, languages, UIFrameworks, versionControlTo
 
 export const Skills: FC = () => {
  return( <>
- <Header className="job-header">Skills:</Header>
     <div className="tags">
       {skills
         .map(skillGroup => skillGroup.tags
